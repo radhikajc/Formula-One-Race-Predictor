@@ -22,14 +22,23 @@ The dataset contains information about all championships and races from 2012 to 
 ### Variable Description 
 Following are the main features used in the dataset along with their respective datatypes: 
 • Race ID - Unique key to associate Races (Numeric) 
+
 • Circuit ID - Unique key to associate Circuits (Numeric) 
+
 • Year - Year when the race was hosted (Numeric) 
+
 • Circuit - Circuit where the race will be hosted (Character) 
+
 • Country - Location of Grand Prix (Character) 
+
 • Driver Name - Name of the Driver along with their racing number, team they represent and Country they belong to (Character) 
+
 • Constructor Name - Name of the Constructor along with the country they represent (Character) 
+
 • Driver Standing - Position of Driver at the end of each race (Numeric) 
+
 • Constructor Standing - Position of Constructors at the end of each race (Numeric) 
+
 • Results - Final Position of Drivers and Constructors in the World Championship (Numeric) 
 
 ## Data Cleaning and Pre-processing 
@@ -52,7 +61,7 @@ The aim of visualizing acquired data is to enable the exploration of data and de
 *Feature Correlation Matrix:*
 <img width="422" alt="image" src="https://user-images.githubusercontent.com/103969912/192169010-c221706e-7456-4aed-9987-3769b42f30f1.png">
 
-As we can see from our correlation matrix, the features that are highly correlated are the constructor position and driver position, drive points and their podium finish and the least correlated features are the seasons with all other features.![image](https://user-images.githubusercontent.com/103969912/192169026-19a9c180-0940-4a9c-921b-30bf302e2816.png)
+As we can see from our correlation matrix, the features that are highly correlated are the constructor position and driver position, drive points and their podium finish and the least correlated features are the seasons with all other features.
 
 *Countries with at least one participating circuit:*
 
@@ -106,21 +115,25 @@ Another simple algorithm that many people prefer is the support vector machine, 
 
 ##### Result:
 R2 Value: 0.6857529973840111
+
 Mean squared error: 11.878038826533745 
+
 Root mean squared error: 3.446453079113909
 
 <img width="516" alt="image" src="https://user-images.githubusercontent.com/103969912/192169374-09011f6e-77d8-4b1c-8c0c-e37bb27457d1.png">
 
 #### Neural Network:
 
-#####  Neural Network is the model loosely inspired by the human nervous system. It creates networks between classifiers, and is used with models that are not linearly separable. This model creates well connected nodes that are used to cluster and classify the dataset. Although neural networks can be Used for classification and regression, it was in this instance used for regression with highly effective results. Unfortunately, it is complex to implement.
+Neural Network is the model loosely inspired by the human nervous system. It creates networks between classifiers, and is used with models that are not linearly separable. This model creates well connected nodes that are used to cluster and classify the dataset. Although neural networks can be Used for classification and regression, it was in this instance used for regression with highly effective results. Unfortunately, it is complex to implement.
 
 ##### Result:
 
 <img width="541" alt="image" src="https://user-images.githubusercontent.com/103969912/192169422-744880a4-1fc3-4b1f-a004-81d8e1d11ac6.png">
 
  R2 Value: 0.7029156169631899
+ 
  Mean squared error: 11.22931899777016
+ 
  Root mean squared error: 3.351017606305607
  
  ## Performance Evaluation and Interpretation 
